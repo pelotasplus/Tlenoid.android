@@ -183,14 +183,14 @@ Protocol
 		       username +
 		       "</username><host>tlen.pl</host><digest>" +
 		       digest +
-		       "</digest><resource>WebTlen</resource></query></iq>";
+		       "</digest><resource>Tlenoid</resource></query></iq>";
 	}
 
 	public static String
 	tlen_session_string()
 	{
 		// return "<s s='1' v='9' t='06000224'>";
-		return "<s v='6'>";
+		return "<s v='10'>";
 	}
 
 	public static String
