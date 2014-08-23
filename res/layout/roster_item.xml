@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/row"
+    android:layout_width="fill_parent"
+    android:layout_height="51dp"
+    android:paddingTop="4dp"
+    android:paddingBottom="4dp"
+>    
+	<ImageView
+		android:id="@+id/statusImg"
+		android:scaleType="centerCrop"
+
+		android:paddingRight="8dp"
+		android:paddingLeft="8dp"
+
+		android:layout_width="43dp"
+		android:layout_height="43dp"
+		
+		android:src="@drawable/icon"
+		android:contentDescription="@string/statusImgDesc"
+	/>
+
+	<TextView
+		android:id="@+id/alias"
+
+		android:textSize="19sp"
+		android:text="@string/user_info_default_alias"
+		android:textStyle="bold"
+		android:textColor="@android:color/white"
+
+		android:ellipsize="marquee"
+		android:fadingEdge="horizontal"
+		android:marqueeRepeatLimit="marquee_forever"
+		android:scrollHorizontally="true"
+
+		android:lines="1"
+
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content" 
+
+		android:layout_alignParentTop="true"
+		android:layout_alignParentRight="true"
+		android:layout_toRightOf="@id/statusImg"
+
+		android:paddingRight="59dp"
+	/>
+
+	<TextView
+		android:id="@+id/status"
+
+		android:textSize="11sp"
+		android:text="@string/user_info_default_name"
+		android:textColor="@android:color/white"
+
+		android:ellipsize="marquee"
+		android:fadingEdge="horizontal"
+		android:marqueeRepeatLimit="marquee_forever"
+		android:scrollHorizontally="true"
+
+		android:lines="1"
+
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+
+		android:layout_alignParentBottom="true"
+		android:layout_alignParentRight="true"
+		android:layout_toRightOf="@id/statusImg"
+		android:layout_below="@id/alias"
+
+		android:paddingRight="59dp"
+	/>
+
+	<ImageView
+		android:id="@+id/avatarImg"
+
+		android:scaleType="centerCrop"
+
+		android:paddingRight="8dp"
+
+		android:layout_width="51dp"
+		android:layout_height="43dp"
+
+		android:layout_alignParentRight="true"
+		android:contentDescription="@string/avatarImgDesc"
+	/>
+
+	<ImageView
+		android:id="@+id/unreadImg"
+
+		android:layout_width="wrap_content"
+		android:layout_height="43dp"
+		
+		android:paddingRight="8dp"
+
+		android:layout_toLeftOf="@id/avatarImg"
+
+		android:layout_centerVertical="true"
+		android:layout_alignParentBottom="true"
+		android:layout_alignParentTop="true"
+		android:contentDescription="@string/unreadImgDesc"
+	/>
+</RelativeLayout>

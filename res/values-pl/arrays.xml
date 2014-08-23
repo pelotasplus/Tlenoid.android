@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <string-array name="chat_styles">
+        <item>Zwykły tekst, zupełnie jak GTalk</item>
+        <item>Piękne bąbelki, jak na iPhone</item>
+    </string-array>
+    
+</resources>

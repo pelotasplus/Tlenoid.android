@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:paddingLeft="4dp"
+    android:paddingRight="4dp"
+    android:paddingTop="4dp"
+    >
+    
+	
+	<TextView
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:textColor="@android:color/black"
+		android:id="@+id/message"
+		android:text="random message"
+		android:layout_gravity="left"
+		android:focusable="false"
+		android:padding="2dp"
+	/>
+	
+	<TextView
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:textColor="@color/Snow4"
+		android:textSize="9dp"
+		android:id="@+id/time"
+		android:text="2012-02-10 24:30"
+		android:layout_gravity="left"
+		android:padding="2dp"
+		android:focusable="false"
+	/>
+</LinearLayout>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:background="#ffffff"
+	android:orientation="vertical"
+	android:baselineAligned="false"
+>
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:layout_weight="1"
+		android:orientation="vertical"
+		android:paddingTop="8dp"
+		android:baselineAligned="false"
+	>
+		<LinearLayout
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+		>
+			<Spinner
+				android:id="@+id/presence_spinner"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:entries="@array/Presences"
+			/>
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_weight="20"
+		>
+			<EditText
+				android:layout_width="fill_parent"
+				android:layout_height="fill_parent"
+				android:id="@+id/presence_desc"
+				android:gravity="top"
+			/>
+		</LinearLayout>
+
+		<LinearLayout
+
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal"
+			android:layout_weight="1"
+		>
+			<Button
+				android:id="@+id/apply_button"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:text="@string/apply"
+				android:onClick="onClick"
+				android:layout_weight="1"
+			/>
+
+			<Button
+				android:id="@+id/cancel_button"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:text="@android:string/cancel"
+				android:layout_weight="1"
+			/>
+		</LinearLayout>
+	</LinearLayout>
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:layout_weight="1"
+		android:background="#000000"
+	>
+	</LinearLayout>
+</LinearLayout>

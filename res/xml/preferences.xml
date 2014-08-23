@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+	xmlns:android="http://schemas.android.com/apk/res/android"
+>
+	<PreferenceCategory
+		android:title="Account"
+	>
+		<EditTextPreference
+			android:name="@string/pref_user_name"
+			android:summary="@string/pref_user_name_desc"
+			android:defaultValue=""
+			android:title="@string/pref_user_name"
+			android:key="account_username"
+		/>
+		<EditTextPreference
+			android:name="@string/pref_password"
+			android:summary="@string/pref_password_desc"
+			android:defaultValue=""
+			android:title="@string/pref_password"
+			android:password="true"
+			android:key="account_password"
+		/>
+	</PreferenceCategory>
+	
+	<PreferenceCategory
+		android:title="@string/pref_ui"
+	>
+		
+		<ListPreference
+	            android:key="chat_style"
+	            android:title="@string/pref_chat_style"
+	            android:summary="@string/pref_chat_style_desc"
+	            android:defaultValue="1"
+	            android:entries="@array/chat_styles"
+	            android:entryValues="@array/chat_styles_values"
+	        />   
+	    
+	</PreferenceCategory>
+
+	<PreferenceCategory
+		android:title="@string/pref_advance"
+	>
+		<Preference
+                        android:key="default_presence"
+                        android:title="@string/pref_default_presence"
+                        android:summary="@string/pref_default_presence_desc"
+                >      
+			<intent
+				android:action="pl.com.nic.android.tlen.PRESENCESETTING"
+			/>
+                </Preference>
+                
+		<CheckBoxPreference
+                        android:key="auto_reconnect"
+                        android:title="@string/pref_auto_reconnect"
+                        android:summary="@string/pref_auto_reconnect_desc"
+                        android:defaultValue="true"
+                />      
+                
+		<CheckBoxPreference
+                        android:key="auto_away"
+                        android:title="@string/pref_auto_away"
+                        android:summary="@string/pref_auto_away_desc"
+                        android:defaultValue="true"
+                />      
+	</PreferenceCategory>
+</PreferenceScreen>

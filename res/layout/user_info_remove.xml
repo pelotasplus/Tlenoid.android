@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical"
+	android:baselineAligned="false"
+>
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:layout_weight="1"
+		android:orientation="horizontal"
+		android:paddingTop="8dp"
+		android:paddingBottom="16dp"
+		android:baselineAligned="false"
+	>
+		<TextView
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:id="@+id/presence_desc"
+			android:gravity="top"
+			android:text="@string/sure_to_remove_account"
+		/>
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal"
+		android:layout_weight="1"
+	>
+		<Button
+			android:id="@+id/user_remove_ok"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:text="@string/ok_remove"
+			android:layout_weight="1"
+			android:drawableLeft="@android:drawable/ic_menu_delete"
+			android:onClick="onClick"
+		/>
+
+		<Button
+			android:id="@+id/user_remove_cancel"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:text="@android:string/cancel"
+			android:layout_weight="1"
+			android:drawableRight="@android:drawable/ic_menu_close_clear_cancel"
+			android:onClick="onClick"
+		/>
+	</LinearLayout>
+</LinearLayout>

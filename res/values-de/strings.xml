@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+	<string name="app_name">Tlenoid</string>
+	<string name="send">Senden</string>
+	<string name="apply">Anwenden</string>
+
+		<string name="male">Mann</string>
+
+	<string name="female">Frau</string>
+	<string name="quit">Verlassen</string>
+	<string name="wrong_pass">Ihr Passwort stimmt nicht</string>
+	<string name="me">ich</string>
+	<string name="please_setup_account">Bitte Konto einrichten</string>
+	<string name="getting_roster">Hinunterlader der Kontaktliste...</string>
+	<string name="singing_in">Singing in...</string>
+
+	<string name="getting_user_info">Runterladen von Benutzerinformationen ...</string>
+
+	<string name="got_fatal_error">Fatal error</string>
+	<string name="session_disconnected">Verbindung zum Server wurde unterbrochen</string>
+	<string name="do_you_want_to_sign_off">Wählen Sie OK, um zu beendenć</string>
+
+	<string name="user_info_not_available">Benutzerinformationen felhen</string>
+
+	<string name="status_unauthorized">keine Authorisation</string>
+
+
+	<string name="menu_close_chat">Fenster schliessen</string>
+	<string name="menu_user_info">über den Benutzer</string>
+
+	<string name="menu_presence">Status ändern</string>
+	<string name="menu_settings">Einstellungen</string>
+	        <string name="user_info_first_name">Vorname</string>
+	        <string name="user_info_last_name">Name</string>
+	        <string name="user_info_nick">Nick</string>
+
+	       <string name="user_info_email">Email-adresse</string>
+	        <string name="user_info_city">Stadt</string>
+
+	       <string name="user_info_school">Schule</string>
+	        <string name="user_info_sex">Geschlecht</string>
+	        <string name="user_info_age">Alter</string>
+
+	       <string name="user_info_job">Arbeit</string>
+
+	       <string name="user_info_looking_for">Suche...</string>
+	        <string name="user_info_voice">Telefonnummer</string>
+	        <string name="user_info_plans">Pläne </string>
+
+	       <string name="user_info_tlen_id">Tlen ID</string>
+	        <string name="user_info_unknown">unbekanne Parameter</string>
+
+	        <string name="pref_user_name">Benutzername</string>
+	        <string name="pref_user_name_desc">Ihr Login ohne @tlen.pl</string>
+
+	       <string name="pref_password">Passwort</string>
+	      <string name="pref_password_desc">das Paswort Ihres Kontosangeben</string>
+	        <string name="pref_advance">Erweitet</string>
+
+	      <string name="pref_default_presence">Default-Status</string>
+	       <string name="pref_default_presence_desc">Wählen Sie den Default-Status nach dem Einmelden</string>
+	<string name="pref_save_note">Drücken Sie BACK, um die Einstellungen zu
+ korrigieren</string>
+	<!-- Reihenfolge ist wichtig - sehe Status.java -->
+
+	<string-array name="Presences">
+
+		<item>Verfügbar</item>
+		<item>Bin bald wieder de</item>
+		<item>Komme später</item>
+		<item>Nicht stören</item>
+	
+	<item>Sprechen wir!</item>
+		<item>Unichtbar</item>
+	</string-array>
+
+</resources>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+	<group android:id="@+id/chat_menu_group">
+		<item
+			android:id="@+id/CloseChat"
+			android:title="@string/menu_close_chat"
+			android:icon="@android:drawable/ic_menu_close_clear_cancel"
+		/>
+
+		<item
+			android:id="@+id/GetUserInfo"
+			android:title="@string/menu_user_info"
+			android:icon="@android:drawable/ic_menu_info_details"
+		/>
+
+		<item
+			android:id="@+id/EditUserInfo"
+			android:title="@string/menu_user_edit"
+			android:icon="@android:drawable/ic_menu_edit"
+		/>
+
+		<item
+			android:id="@+id/RemoveUser"
+			android:title="@string/menu_user_remove"
+			android:icon="@android:drawable/ic_menu_delete"
+		/>
+	</group>
+
+	<group android:id="@+id/roster_menu_group">
+		<item
+			android:id="@+id/PresenceMenu"
+			android:title="@string/menu_presence"
+			android:icon="@android:drawable/ic_menu_view"
+		/>
+	
+		<item
+			android:id="@+id/SettingsMenu"
+			android:title="@string/menu_settings"
+			android:icon="@android:drawable/ic_menu_manage"
+		/>
+	
+		<item
+			android:id="@+id/QuitMenu"
+			android:title="@string/quit"
+			android:icon="@android:drawable/ic_menu_close_clear_cancel"
+		/>
+	</group>
+</menu>

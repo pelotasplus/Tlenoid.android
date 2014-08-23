@@ -1,0 +1,8 @@
+<resources>
+    <!-- http://www.tayloredmktg.com/rgb/  -->
+    <color name="Gainsboro">#dcdcdc</color>
+    <color name="Snow2">#eee9e9</color>
+    <color name="Snow3">#cdc9c9</color>
+    <color name="Snow4">#8b8989</color>
+    <color name="WhiteSmoke">#f5f5f5</color>
+</resources>
