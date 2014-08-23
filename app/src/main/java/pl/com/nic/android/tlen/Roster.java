@@ -24,8 +24,6 @@ Roster
 	private ArrayList<RosterItem> chats = null;
 	private RosterAdapter rosterAdapter;
 	
-	private AvatarManager avatarMgr = null;
-	
 	private Context ctx;
 	private ViewFlipper flipper;
 	
@@ -40,8 +38,6 @@ Roster
 		buddies = new ArrayList<RosterItem>();
 		
 		chats = new ArrayList<RosterItem>();
-		
-		avatarMgr = new AvatarManager(ctx);
 		
 		rosterAdapter = new RosterAdapter(ctx, R.layout.roster_item, buddies);
 	}
@@ -62,10 +58,9 @@ Roster
 	public void
 	setAvatarToken(String token)
 	{
-		avatarMgr.set_token(token);
 	}
-	
-	
+
+
 	public void
 	updateBuddy(String username, String alias)
 	{
@@ -99,8 +94,6 @@ Roster
 		ri.updateDescription(status);
 		ri.updateAvatar(avatar_md5);
 		ri.updateChatHeader();
-		
-		avatarMgr.retrive(username, avatar_type, avatar_md5);
 	}
 	
 	public ArrayList<RosterItem>
@@ -148,7 +141,6 @@ Roster
 			ri = (RosterItem) iter.next();
 
 			if (ri.getUsername().equals(id)) {
-				ri.setAvatarMgr(avatarMgr);
 				return ri;
 			}
 		}

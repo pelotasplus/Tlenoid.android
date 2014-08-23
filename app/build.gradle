@@ -15,9 +15,19 @@ android {
     }
 
     buildTypes {
+        debug {
+            buildConfigField "boolean", "PICASSO_DEBUG", "true"
+        }
+
         release {
+            buildConfigField "boolean", "PICASSO_DEBUG", "false"
+
             runProguard false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
         }
     }
+}
+
+dependencies {
+    compile 'com.squareup.picasso:picasso:2.3.3'
 }

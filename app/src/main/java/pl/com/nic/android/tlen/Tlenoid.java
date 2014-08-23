@@ -1184,7 +1184,7 @@ Tlenoid extends ListActivity
 		ri.updateStatus(p.getCode());
 		ri.updateDescription(p.getDesc());
 
-		CommonUtils.setBuddyDesc(this.roster_header, ri);
+		CommonUtils.setBuddyDesc(this, this.roster_header, ri);
 	}
 
 	public void

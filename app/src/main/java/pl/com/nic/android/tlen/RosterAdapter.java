@@ -39,7 +39,7 @@ RosterAdapter extends ArrayAdapter<RosterItem>
 
 		RosterItem ri = this.roster.get(position);
 
-		CommonUtils.setBuddyDesc(v, ri);
+		CommonUtils.setBuddyDesc(getContext(), v, ri);
 
 		v.setBackgroundColor(ctx.getResources().getColor(android.R.color.white));
 

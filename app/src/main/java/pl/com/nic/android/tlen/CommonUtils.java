@@ -8,6 +8,7 @@ import android.content.Intent;
 import android.graphics.drawable.Drawable;
 import android.net.Uri;
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.util.Log;
 import android.view.ContextMenu;
 import android.view.MenuItem;
@@ -17,6 +18,8 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
+
+import com.squareup.picasso.Picasso;
 
 public class CommonUtils
 {
@@ -145,7 +148,7 @@ public class CommonUtils
 	
 	
 	public static void
-	setBuddyDesc(View v, RosterItem o)
+	setBuddyDesc(Context context, View v, RosterItem o)
 	{
 		if (o == null)
 			return;
@@ -179,8 +182,12 @@ public class CommonUtils
 
 		if (avtImg != null) {
 			String avatar_path = o.getAvatarPath();
-			if (avatar_path != null) {
-				avtImg.setImageDrawable(Drawable.createFromPath(avatar_path));
+            if (!TextUtils.isEmpty(avatar_path)) {
+
+                Picasso picasso = Picasso.with(context);
+                picasso.setIndicatorsEnabled(BuildConfig.PICASSO_DEBUG);
+                picasso.load(avatar_path).into(avtImg);
+
 				avtImg.setVisibility(View.VISIBLE);
 			} else {
 				avtImg.setVisibility(View.INVISIBLE);

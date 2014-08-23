@@ -23,17 +23,18 @@ RosterItem implements Comparable<RosterItem>
 	
 	private Chat chat = null;
 	
-	private AvatarManager avatarMgr = null;
-
 	private int unread_messages = 0;
 
 	private Hashtable<String, Integer> statusPri = new Hashtable<String, Integer>();
 	
 	private final String STATUS_UNAUTHORIZED;
 
+    private Context context;
+
 	public
 	RosterItem(Context ctx, String username_, String alias_, String subscription_, String group_name_)
 	{
+        context = ctx;
 		username = username_;
 		alias = alias_;
 		subscription = subscription_;
@@ -62,14 +63,6 @@ RosterItem implements Comparable<RosterItem>
 	{
 		this(ctx, username_, "", "both", "");
 	}
-	
-	
-	public void
-	setAvatarMgr(AvatarManager am)
-	{
-		avatarMgr = am;
-	}
-	
 	
 	public Chat
 	getChat()
@@ -189,11 +182,8 @@ RosterItem implements Comparable<RosterItem>
 	
 	public String
 	getAvatarPath()
-	{
-		if (avatarMgr == null)
-			return null;
-		
-		return avatarMgr.get(getAvatar());
+    {
+        return "http://poczta.o2.pl/avatar/" + username + "/0/";
 	}
 
 
@@ -289,6 +279,6 @@ RosterItem implements Comparable<RosterItem>
 		if (chat == null)
 			return;
 		
-		CommonUtils.setBuddyDesc(chat.getView(), this);
+		CommonUtils.setBuddyDesc(context, chat.getView(), this);
 	}
 }
