@@ -1,4 +1,4 @@
-/gen
-/varia
-/bin
-.DS_Store
+.idea/
+import-summary.txt
+*.iml
+build/

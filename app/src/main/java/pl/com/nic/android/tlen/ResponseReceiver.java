@@ -27,8 +27,6 @@ ResponseReceiver extends BroadcastReceiver
 		if ("got-session-start".equals(cmd)) {
 			Bundle b_ = new Bundle();
 
-			throw new RuntimeException("what's this?");
-
 			b_.putString("user-name", "");
 			b_.putString("password",  "");
 
