@@ -8,14 +8,10 @@ android {
         minSdkVersion 9
         targetSdkVersion 19
 
-        applicationId "pl.com.nic.android.tlen"
         versionCode 26
         versionName "0.26"
 
-        compileOptions {
-            sourceCompatibility JavaVersion.VERSION_1_5
-            targetCompatibility JavaVersion.VERSION_1_5
-        }
+        applicationId "pl.com.nic.android.tlen"
     }
 
     buildTypes {
