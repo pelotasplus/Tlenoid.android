@@ -2,14 +2,10 @@
 <!-- requires 2.2	android:installLocation="preferExternal" -->
 <manifest
 	xmlns:android="http://schemas.android.com/apk/res/android"
-	package="pl.com.nic.android.tlen"
-	android:versionCode="26"
-	android:versionName="0.26"
->
+	package="pl.com.nic.android.tlen">
 	<uses-permission android:name="android.permission.INTERNET" />
 	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
-	<uses-sdk android:minSdkVersion="4" />
 	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
     
 	<application
